@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header{
+    background: #abd699;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.logo{
+    margin-right: 25rem;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #16123f;
+    font-weight: bold;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+}
+.nav ul li{
+    list-style-type: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 1.5rem;
+    color: #16123f;
+    font-weight: bold;
+}
+.footer{
+  background-color: #abd699;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #16123f;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0 ;
+}
+.footer-logo{
+  margin-right: 30rem;
+}
+.footer-logo p{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #16123f;
+}
+.size{
+  font-size: 2rem;
+}
+.grey{
+  color: rgb(6, 6, 18);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section{
+    /* display: flex;
+    align-items: center; */
+    margin: 0 3rem;
+    background: #E3E6F3;
+    padding: 1rem;
+    margin: 1rem;
+}
+.link{
+    margin:0px 2rem 0px 0px;
+}
+.link a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #16123f;
+}
+.cards{
+    display: flex;
+}
+.cards ,h2{
+    color: #838aaa;
+    font-weight: bold;
+}
+.amazon{
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(6, 6, 18);
+    background: whitesmoke;
+}
+.item {
+    width: 30%;
+    color: #2d303f;
+  }
+  
+  .cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cont > div {
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    /*demo*/
+    /* box-shadow: 0 0 0 1px black; */
+    /* margin-bottom: 5px; */
+  }
+  .item1{
+    color: rgb(127, 127, 127);
+  }
+.livspace{
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(6, 6, 18);
+    background: whitesmoke;
+}
+.wipro{
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(6, 6, 18);
+    background: whitesmoke;
+}
+.freshwork{
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(6, 6, 18);
+    background: whitesmoke;
+}
+.min-nav{
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+}
+.min-nav li{
+    padding: 1rem;
+    margin:0 2.5rem;
+}
+.min-nav li a{
+    text-decoration: none;
+    color:  #16123f;
+    font-weight: bolder;
+    background: whitesmoke;
+}
+
+/* CARDS */
+
+.card-container {
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4em;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  max-width: 20em;
+  width: 20em;
+  height: auto;
+  margin: 1.5em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  max-height: 14em;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: 14em;
+}
+
+.card-info {
+  position: relative;
+  color: #16123f;
+  padding: 0.6em 2.2em 2.2em;
+}
+
+.card-info h3 {
+  font-size: 1.8em;
+  font-weight: 800;
+  margin-bottom: 0.3em;
+}
+
+.card-info p {
+  font-size: 1em;
+  margin-bottom: 0.3em;
+}
+
+
+/* PAGINATION */
+
+.pagination {
+  text-align: center;
+  margin: 1.9em 1.9em 3.8em;
+  user-select: none;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0.3em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
+}
+
+.pagination li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 2.6em;
+}
+
+.previous-page,
+.next-page {
+  background: #0AB1CE;
+  width: 5em;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.previous-page:hover {
+  transform: translateX(-5px);
+}
+
+.next-page:hover {
+  transform: translateX(5px);
+}
+
+.current-page,
+.dots {
+  background: #ccc;
+  width: 2.8em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current-page:hover,
+.dots:hover {
+  transform: translateY(-5px);
+}
+
+.pagination li.active {
+  background: #333;
+}
+
+.pagination li.disable {
+  background: #ccc;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 952px) {
+  label.logo {
+      font-size: 1.6rem;
+      padding-left: 1rem;
+  }
+  nav ul li a {
+      font-size: 1rem;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+  body {
+      font-size: 12px;
+  }
+  .pagination {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+      display: block;
+  }
+  nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #121211;
+      top: 4rem;
+      right: -100%;
+      text-align: center;
+      margin: 0;
+  }
+  nav ul li {
+      display: block;
+      margin: 3rem 0;
+      line-height: 2rem;
+  }
+  nav ul li a {
+      font-size: 1.3rem;
+  }
+  nav ul li a.active,
+  nav ul li a:hover,
+  nav ul li a:focus {
+      background: none;
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: 600;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      border-radius: 0;
+      text-decoration: none;
+  }
+  #check:checked~ul {
+      right: 0;
+  }
+}
+
+
+/* DISABLED */
+
+
+.card-content {
+  margin: 30px;
+}
+.card {
+  max-width: 325px;
+  width: 325px;
+  height: auto;
+  margin: 25px;
+}
+.card-image {
+  max-height: 200px;
+}
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+.card-info {
+  padding: 10px 20px 20px;
+}
+.card-info h3 {
+  margin-bottom: 5px;
+}
+.card-info p {
+  margin-bottom: 5px;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 30px 60px;
+}
+.pagination li {
+  margin: 5px;
+}
+.pagination li a {
+  font-size: 1em;
+  line-height: 35px; 
+}
+.previous-page,
+.next-page {
+  width: 60px; 
+}
+.current-page,
+.dots {
+  width: 35px; 
+}
+body{
+  background: #FFFFFF;
+background: -webkit-radial-gradient(top left, #FFFFFF, #C2D1E5);
+background: -moz-radial-gradient(top left, #FFFFFF, #C2D1E5);
+background: radial-gradient(to bottom right, #FFFFFF, #C2D1E5);
+}
+a{
+  text-decoration: none;
+}
