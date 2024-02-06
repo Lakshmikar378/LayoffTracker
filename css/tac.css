@@ -12,22 +12,24 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background: #f0e8e8; 
 }
+/*--------navbar-------*/
 .header{
-    background: #abd699;
-    padding: 1rem;
+    background:  #ffffff;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    justify-content: center;
 }
 .logo{
-    margin-right: 25rem;
+    margin: 0px 10rem 0px 5rem;
 }
 .logo a{
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #16123f;
+    font-weight: bolder;
+    color: #212529 ;
 }
 .size{
     font-size: 2rem;
@@ -42,20 +44,52 @@ body{
 .nav ul li a{
     text-decoration: none;
     padding: 1.5rem;
-    color: #16123f;
-    font-weight: bold;
+    color: #212529;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
+.nav ul li a:hover{
+    color:rgba(79, 135, 251,0.9);
+}
+/* ----drop down----- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* ----drop down close--- */
+/* -------navbar-----close */
+/* ----body------- */
 section{
     display: flex;
     align-items: center;
     margin: 0 3rem;
-    background: #E3E6F3;
+    background: #6d85f0;
     padding: 1rem;
     flex-direction: column;
     align-items: center;
 }
 .tac ,h2{
-    color: #838aaa;
+    color: #6d85f0;
     font-weight: bolder;
 }
 .information{
@@ -67,12 +101,15 @@ section{
 .information a{
   text-decoration: none;
 }
+/* ------body ends------- */
+
+/* ---footer------ */
 .footer{
-    background-color: #abd699;
+    background: rgba(22, 18, 63,0.9);
     padding: 1rem;
-    margin-top: 2rem;
-    color: #16123f;
+    color: #ffffff;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 0 ;
 }
@@ -83,19 +120,19 @@ section{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bolder;
-    color: #16123f;
+    color: #ffffff;
+    margin: 0px 0px 0px 5rem;
 }
 .size{
     font-size: 2rem;
 }
+.querry p{
+    color:#ffffff;
+}
 .grey{
-    color: rgb(6, 6, 18);
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
 }
-body{
-    background: #FFFFFF;
-background: -webkit-radial-gradient(top left, #FFFFFF, #C2D1E5);
-background: -moz-radial-gradient(top left, #FFFFFF, #C2D1E5);
-background: radial-gradient(to bottom right, #FFFFFF, #C2D1E5);
-}
+
+/* ----footer ends------ */

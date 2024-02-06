@@ -8,26 +8,24 @@
     scroll-behavior: smooth;
 }
 body{
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
+    background: #f0e8e8;
+  }
+/*--------navbar-------*/
 .header{
-    background: #abd699;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    background:  #ffffff;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .logo{
-    margin-right: 25rem;
+    margin: 0px 10rem 0px 5rem;
 }
 .logo a{
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #16123f;
+    font-weight: bolder;
+    color: #212529 ;
 }
 .size{
     font-size: 2rem;
@@ -42,15 +40,47 @@ body{
 .nav ul li a{
     text-decoration: none;
     padding: 1.5rem;
-    color: #16123f;
-    font-weight: bold;
+    color: #212529;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
+.nav ul li a:hover{
+    color:rgba(79, 135, 251,0.9);
+}
+/* ----drop down----- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* ----drop down close--- */
+/* -------navbar-----close */
+/* -------footer---------*/
 .footer{
-    background-color: #abd699;
+    background: rgba(22, 18, 63,0.9);
     padding: 1rem;
-    margin-bottom: 1rem;
-    color: #16123f;
+    color: #ffffff;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 0 ;
 }
@@ -61,16 +91,20 @@ body{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bolder;
-    color: #16123f;
+    color: #ffffff;
+    margin: 0px 0px 0px 5rem;
 }
 .size{
     font-size: 2rem;
 }
 .grey{
-    color: rgb(6, 6, 18);
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
 }
+/* -----footer close-------- */
+
+/* ---------body------ */
 section{
     display: flex;
     align-items: center;
@@ -80,91 +114,16 @@ section{
     margin: 1rem;
     flex-direction: column;
 }
-.link{
-    margin:0px 2rem 0px 0px;
-}
-.link a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #16123f;
-}
-.cards{
-    display: flex;
-}
-h2{
-    color: #838aaa;
-    font-weight: bolder;
-}
-.amazon{
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(6, 6, 18);
-    background: whitesmoke;
-}
-.item {
-    width: 30%;
-    color: #2d303f;
-    font-weight: bolder;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .container > div {
-    flex: 34%; /* or - flex: 0 50% - or - flex-basis: 50% - */
-    /*demo*/
-    /* box-shadow: 0 0 0 1px black; */
-    /* margin-bottom: 5px; */
-  }
-  .item1{
-    color: rgb(127, 127, 127);
-  }
-.livspace{
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(6, 6, 18);
-    background: whitesmoke;
-}
-.wipro{
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(6, 6, 18);
-    background: whitesmoke;
-}
-.freshwork{
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(6, 6, 18);
-    background: whitesmoke;
-}
-.min-nav{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    font-weight: bold;
-}
-.min-nav li{
-    padding: 1rem;
-    margin:0 2.5rem;
-}
-.min-nav li a{
-    text-decoration: none;
-    color:  #16123f;
-    font-weight: bolder;
-    background: whitesmoke;
-}
+
 /* tableview css */
 table {
-    border: 2px solid black;
+    border: 2px solid#f0e8e8;
     border-radius: 10px;
     width:70%;
   }
   th, td,tr {
     padding: 1rem;
-    border: 1px solid grey;
+    border: 1px solid  #f0e8e8;
    
   }
   th {
@@ -180,9 +139,4 @@ table {
     border-radius: 50px;
     padding: 10px;
   }
-  body{
-    background: #FFFFFF;
-background: -webkit-radial-gradient(top left, #FFFFFF, #C2D1E5);
-background: -moz-radial-gradient(top left, #FFFFFF, #C2D1E5);
-background: radial-gradient(to bottom right, #FFFFFF, #C2D1E5);
-}
+  
