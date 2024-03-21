@@ -10,6 +10,7 @@
 .body{
     margin:0;
     font-family: sans-serif;
+    max-width: 1024px;
 }
 .container{
     height: 100vh;
@@ -25,10 +26,11 @@
     padding: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-end;
+    width: 100%;
 }
 .logo{
-    margin: 0px 10rem 0px 5rem;
+    margin: 0 3rem 0 0;
 }
 .logo a{
     text-decoration: none;
