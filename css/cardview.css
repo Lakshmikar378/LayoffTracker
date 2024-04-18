@@ -7,46 +7,47 @@
   font-family: "Poppins", sans-serif;
 }
 body{
-  background: #f0e8e8;
+  font-family: sans-serif;
 }
-/*--------navbar-------*/
-.header{
-  background:  #ffffff;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo{
-  margin: 0px 10rem 0px 5rem;
+.container{
+  height: 100vh;
+  width: 100%;
 }
 .logo a{
+  color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  color: #212529 ;
 }
-.size{
-  font-size: 2rem;
-}
-.nav ul{
+nav{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background: #004274;
+  position: relative;
+  height: 70px;
+  padding: 10px 30px;
 }
-.nav ul li{
+.logo{
+  color: #fff;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav ul li{
   list-style-type: none;
 }
-.nav ul li a{
+nav ul li a{
   text-decoration: none;
-  padding: 1.2rem;
-  color: #212529;
-  font-weight: bolder;
-  font-size: 1.2rem;
+  color: #fff;
 }
-.nav ul li a:hover{
-  color:rgba(79, 135, 251,0.9);
+.menu-icon{
+  color: #fff;
+  font-size: 28px;
 }
-/* ----drop down----- */
+.menu-icon{
+  display: none;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -71,38 +72,70 @@ body{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* ----drop down close--- */
-/* -------navbar-----close */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
 
-/* -------footer---------*/
-.footer{
-  background: rgba(22, 18, 63,0.9);
-  padding: 1rem;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0 ;
+.footer-item {
+    flex: 0 0 33.33%; 
+    max-width: 33.33%; 
 }
-.footer-logo{
-  margin-right: 30rem;
+
+.footer-item h3 {
+    font-size: 1.2em;
 }
-.footer-logo p{
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  color: #ffffff;
-  margin: 0px 0px 0px 5rem;
+
+.footer-item p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
-.size{
-  font-size: 2rem;
+
+.quick-links {
+    list-style-type: none;
+    padding: 0;
 }
-.grey{
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: bold;
+
+.quick-links li {
+    display: inline;
+    margin-right: 10px;
 }
-/* -----footer close-------- */
+
+.quick-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (max-width: 620px){
+    footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 713px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: #004274;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
 
 /* ---------body------ */
 /* CARDS */
@@ -110,6 +143,7 @@ body{
 .card-container {
   min-height: calc(100vh - 4rem);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -118,6 +152,7 @@ body{
 
 .card-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -238,7 +273,7 @@ body{
   }
 }
 
-@media (min-width: 100px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   body {
       font-size: 12px;
   }
@@ -249,47 +284,6 @@ body{
       width: 100%;
   }
 }
-
-@media (max-width: 858px) {
-  .checkbtn {
-      display: block;
-  }
-  nav ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #121211;
-      top: 4rem;
-      right: -100%;
-      text-align: center;
-      margin: 0;
-  }
-  nav ul li {
-      display: block;
-      margin: 3rem 0;
-      line-height: 2rem;
-  }
-  nav ul li a {
-      font-size: 1.3rem;
-  }
-  nav ul li a.active,
-  nav ul li a:hover,
-  nav ul li a:focus {
-      background: none;
-      color: #fff;
-      letter-spacing: 2px;
-      font-weight: 600;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      border-radius: 0;
-      text-decoration: none;
-  }
-  #check:checked~ul {
-      right: 0;
-  }
-}
-
-
 /* DISABLED */
 
 
@@ -338,12 +332,6 @@ body{
 .dots {
   width: 35px; 
 }
-/* body{
-  background: #FFFFFF;
-background: -webkit-radial-gradient(top left, #FFFFFF, #C2D1E5);
-background: -moz-radial-gradient(top left, #FFFFFF, #C2D1E5);
-background: radial-gradient(to bottom right, #FFFFFF, #C2D1E5);
-} */
 a{
   text-decoration: none;
 }

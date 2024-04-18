@@ -2,58 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=0, initial-scale=1.0">
-    <title>LayoffsTracker/Termsandconditions</title>
-    <link rel="stylesheet" href="../css/tac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoffsTracker/tac</title>
+    <link rel="stylesheet" href="/css/tac.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="/index.html"><span class="size">L</span>ayoffs<span class="size">T</span>racker</a>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a href=""> <div class="dropdown">
-                    <a href="/index.html">Insights</a>
-                    <div class="dropdown-content">
-                        <a href="/html/cardview.html">Cardview</a>
-                        <a href="/html/tableview.html">Tableview</a>
-                        <a href="/html/layoffnews.html">Layoffsnews</a>
-                        <a href="/html/layoffanalytics.html">Layoffanalytics</a>
-                        <a href="/html/overview.html">Overview</a>
-                    </div>
-            </div></a></li> 
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="contactus.html">Contact</a></li>
-                <li><a href="tac.html">Terms of use</a></li>
-                <li><a href="info.html">Have info?</a></li>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1><a href="/index.html">LayoffsTracker</a></h1>
+            </div>
+            <ul id="menuList">
+                <li><a href="">Insights</a></li>
+                <li><a href="/html/aboutus.html">About</a></li>
+                <li><a href="/html/contactus.html">Contact</a></li>
+                <li><a href="/html/tac.html">Terms of use</a></li>
+                <li><a href="/html/info.html">Have info?</a></li>
             </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <div class="exitimg">
+            <img src="/images/exit.jpg" alt="layoffimg">
         </div>
-    </div>
-    <section>
-        <h2 class="tac">Terms and conditions</h2>
-        <div class="information">
-        <p>These terms of use describe your rights and responsibilities as a user of the 
-            LayoffsTracker <br> Though all efforts have been made to ensure the accuracy and currency of the content on <a href="/index.html"><span class="grey">LayoffsTracker</span></a>, the same should not be construed as a statement of law or used for any legal purposes. In case of any ambiguity or doubts, users are advised to verify/check with the concerned organization,<span class="grey">techlayoff@gmail.com</span> and/or other source(s), and to obtain appropriate professional advice.
-        </p><br>
-        <h2>Privacy Policy</h2>
-        <p>This website does not automatically capture any specific personal information from you (like name or e-mail address), that allows us to identify you individually. If you choose to provide us with your personal information, like names or email address, when you provide Any information, related to layoffnews you can provide us to <a href="info.html"><span class="grey help">Have info,Help us?</span></a>, we use it only to get correct information.</p><br>
-        <h2>Cookies Policy</h2>
-        <p>A cookie is a piece of software code that an internet web site sends to your browser when you access information at that site. A cookie is stored as a simple text file on your computer or mobile device by a website server and only that server will be able to retrieve or read the contents of that cookie. Cookies let you navigate between pages efficiently as they store your preferences, and generally improve your experience of a website</p><br>
-        <p>Queries Related to LayoffsTracker visit <a href="contactus.html"><span class="grey">Contact us</span></a> page</p>
-        </div>
-    </section>
-
-    <div class="footer">
-        <div class="footer-logo">
-            <p><span class="size">L</span>ayoffs<span class="size">T</span>racker</p>
-        </div>
-        <div class="querry">
-            <p>Missing Layoff info? let us know here<br>
-            Queries,please write to email <span class="grey">techlayoff@gmail.com</span></p>
-        </div>
-    </div>
+        <section>
+            <h2 class="tac">Terms and conditions</h2>
+            <div class="information">
+            <p>These terms of use describe your rights and responsibilities as a user of the 
+                LayoffsTracker <br> Though all efforts have been made to ensure the accuracy and currency of the content on <a href="/index.html"><span class="grey">LayoffsTracker</span></a>, the same should not be construed as a statement of law or used for any legal purposes. In case of any ambiguity or doubts, users are advised to verify/check with the concerned organization,<span class="grey">techlayoff@gmail.com</span> and/or other source(s), and to obtain appropriate professional advice.
+            </p><br>
+            <h2>Privacy Policy</h2>
+            <p>This website does not automatically capture any specific personal information from you (like name or e-mail address), that allows us to identify you individually. If you choose to provide us with your personal information, like names or email address, when you provide Any information, related to layoffnews you can provide us to <a href="info.html"><span class="grey help">Have info,Help us?</span></a>, we use it only to get correct information.</p><br>
+            <h2>Cookies Policy</h2>
+            <p>A cookie is a piece of software code that an internet web site sends to your browser when you access information at that site. A cookie is stored as a simple text file on your computer or mobile device by a website server and only that server will be able to retrieve or read the contents of that cookie. Cookies let you navigate between pages efficiently as they store your preferences, and generally improve your experience of a website</p><br>
+            <p>Queries Related to LayoffsTracker visit <a href="contactus.html"><span class="grey">Contact us</span></a> page</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-item">
+                <h3>Layoffs Tracker</h3>
+                <p>we track every layoffs</p>
+            </div>
+            <div class="footer-item">
+                <h3>Contact Us</h3>
+                <p>Email:techlayoff@gmail.com<br>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-item">
+                <h3>quick links</h3>
+                <ul class="quick-links">
+                    <li><a href="">Insights</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Terms of use</a></li>
+                    <li><a href="">Have info?</a></li>
+                </ul>
+            </div>
+        </footer> 
+    <script src="/js/scriptnav.js"></script>
+</div>
 </body>
 </html>

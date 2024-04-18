@@ -2,40 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LayoffsTracker</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-    <div class="header">
-        <div class="logo">
-            <a href="index.html"><span class="size">L</span>ayoffs<span class="size">T</span>racker</a>
-        </div>
-        <div class="nav">
-            <ul>
-              <li><a href=""> <div class="dropdown">
-                    <a href="index.html">Insights</a>
+        <nav>
+            <div class="logo">
+                <h1><a href="/index.html">LayoffsTracker</a></h1>
+            </div>
+            <ul id="menuList">
+                <li><a href=""> <div class="dropdown">
+                    <a href="/index.html">Insights<i class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="html/cardview.html">Cardview</a>
-                        <a href="html/tableview.html">Tableview</a>
-                        <a href="html/layoffnews.html">Layoffsnews</a>
-                        <a href="html/layoffanalytics.html">Layoffanalytics</a>
-                        <a href="html/overview.html">Overview</a>
+                        <a href="/html/cardview.html">Cardview</a>
+                        <a href="/html/tableview.html">Tableview</a>
+                        <a href="/html/layoffnews.html">Layoffsnews</a>
+                        <a href="/html/layoffanalytics.html">Layoffanalytics</a>
                     </div>
             </div></a></li> 
-                <li><a href="html/aboutus.html">About</a></li>
-                <li><a href="html/contactus.html">Contact</a></li>
-                <li><a href="html/tac.html">Terms of use</a></li>
-                <li><a href="html/info.html">Have info?</a></li>
+                <li><a href="/html/aboutus.html">About</a></li>
+                <li><a href="/html/contactus.html">Contact</a></li>
+                <li><a href="/html/tac.html">Terms of use</a></li>
+                <li><a href="/html/info.html">Have info?</a></li>
             </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <div class="exitimg">
+            <img src="/images/exit.jpg" alt="layoffimg">
         </div>
-    </div>
-    <div class="layup">
-        <img src="./images/layup.jpg" alt="">
-    </div>
     <div class="scroll">
     <div class="layoff">
         <img src="./images/layoff.jpg" alt="">
@@ -43,9 +43,11 @@
     <div class="layinfo">
         <h1>About Layoffs</h1>
         <p>Layoffs refer to the temporary or permanent termination of employment for a group of employees by an organization. This decision is typically made due to various reasons, such as changes in business needs, economic challenges, restructuring, or other factors that necessitate a reduction in the workforce. Layoffs can impact individuals at all levels of an organization, from entry-level positions to executive roles.</p>
+        <p class="margin">One of the most common reasons for layoffs is because the company is cutting costs for some reason. This could be because the business has to pay off debts, there are fewer sales or the company no longer has the financial backing of 
+        investors.</p>
     </div>
    </div>
-    <section>
+    <section class="latest">
         <div class="link">
             <h1>Latest Layoffs</h1>
         </div>
@@ -108,43 +110,60 @@
             </div>
         </div>
     </section>
-    <section >
-        <div class="insight">
-            <h1>Layoffs Insights</h1>
-            <img src="./images/insights.jpg" alt="">
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <ul class="accordion">
+                <li>
+                    <input type="radio" name="accordion" id="first">
+                    <label for="first">How often is the layoffs tracker updated?</label>
+                    <div class="content">
+                        <p>Users often want to know the frequency of updates to ensure they're receiving the most current information. Providing details on the update schedule helps maintain transparency and trust in the accuracy of the tracker.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="second">
+                    <label for="second">What industries or sectors does the layoffs tracker cover?</label>
+                    <div class="content">
+                        <p>People often want to know which sectors or industries are included in the layoffs tracker to determine its relevance to their interests or concerns. Providing clarity on coverage helps users understand the scope of the tracker's information.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="third">
+                    <label for="third">How does the layoffs tracker define 'layoffs'?</label>
+                    <div class="content">
+                        <p>Defining what constitutes a layoff can vary between organizations and trackers. Some may include only permanent job losses, while others may also encompass temporary furloughs or reductions in work hours. Clarifying this definition helps users interpret the data accurately.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="accordion" id="fourth">
+                    <label for="fourth">Can users submit information or updates to the layoffs tracker?</label>
+                    <div class="content">
+                        <p>Allowing user submissions can enhance the accuracy and comprehensiveness of the layoffs tracker. Users may have access to information not yet included in the tracker, such as local layoffs or those affecting smaller companies. Providing a mechanism for user submissions can crowdsource data and improve the tracker's utility.</p>
+                    </div>
+                </li>            
+            </ul>
         </div>
-        <div class="min-nav">
-            <div class="mini-card cardview">
-                <img src="./images/layu.png" width="50px" height="50px" alt="">
-                <li><a href="html/cardview.html">Cardview</a></li>
-            </div>
-            <div class="mini-card">
-                <img src="./images/layu.png" width="50px" height="50px" alt="">
-                <li><a href="html/tableview.html">Tableview</a></li>
-            </div>
-            <div class="mini-card">
-                <img src="./images/layu.png" width="50px" height="50px" alt="">
-                <li><a href="html/layoffnews.html">Layoffsnews</a></li>
-            </div>
-            <div class="mini-card">
-                <img src="./images/layu.png" width="50px" height="50px" alt="">
-                <li><a href="html/layoffanalytics.html">Layoffanalytics</a></li>
-            </div>
-            <div class="mini-card">
-                <img src="./images/layu.png" width="50px" height="50px" alt="">
-                <li><a href="html/overview.html">Overview</a></li>
-            </div>
-           </div>
-    </section>
-    <div class="footer">
-            <div class="footer-logo">
-                <p><span class="size">L</span>ayoffs<span class="size">T</span>racker</p>
-            </div>
-            <div class="querry">
-                <p>Missing Layoff info? let us know here<br>
-                Queries,please write to email <span class="grey">techlayoff@gmail.com</span></p>
-            </div>
+    <footer class="footer">
+        <div class="footer-item">
+            <h3>Layoffs Tracker</h3>
+            <p>we track every layoffs</p>
         </div>
+        <div class="footer-item">
+            <h3>Contact Us</h3>
+            <p>Email:techlayoff@gmail.com<br>Phone: 123-456-7890</p>
+        </div>
+        <div class="footer-item">
+            <h3>quick links</h3>
+            <ul class="quick-links">
+                <li><a href="">Insights</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Terms of use</a></li>
+                <li><a href="">Have info?</a></li>
+            </ul>
+        </div>
+    </footer> 
     </div>
+    <script src="/js/scriptnav.js"></script>
 </body>
 </html>

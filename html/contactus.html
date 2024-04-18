@@ -2,57 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LayoffsTracker/contactus</title>
-    <link rel="stylesheet" href="../css/contactus.css">
+    <link rel="stylesheet" href="/css/contactus.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="/index.html"><span class="size">L</span>ayoffs<span class="size">T</span>racker</a>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a href=""> <div class="dropdown">
-                    <a href="/index.html">Insights</a>
-                    <div class="dropdown-content">
-                        <a href="/html/cardview.html">Cardview</a>
-                        <a href="/html/tableview.html">Tableview</a>
-                        <a href="/html/layoffnews.html">Layoffsnews</a>
-                        <a href="/html/layoffanalytics.html">Layoffanalytics</a>
-                        <a href="/html/overview.html">Overview</a>
-                    </div>
-            </div></a></li> 
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="contactus.html">Contact</a></li>
-                <li><a href="tac.html">Terms of use</a></li>
-                <li><a href="info.html">Have info?</a></li>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1><a href="/index.html">LayoffsTracker</a></h1>
+            </div>
+            <ul id="menuList">
+                <li><a href="">Insights</a></li>
+                <li><a href="/html/aboutus.html">About</a></li>
+                <li><a href="/html/contactus.html">Contact</a></li>
+                <li><a href="/html/tac.html">Terms of use</a></li>
+                <li><a href="/html/info.html">Have info?</a></li>
             </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <div class="exitimg">
+            <img src="/images/exit.jpg" alt="layoffimg">
         </div>
-    </div>
-    <section>
-        <h2 class="contact">Contact us</h2>
-        <div class="information">
-        <p>[Working Hours: 09:00 hours to 17:30 hours (Saturday and Sunday Holidays)]</p><br>
-        <h2>Queries Related to LayoffsTracker</h2>
-        <span class="grey">e-Mail: techlayoff@gmail.com</span><br>
-        <span class="grey">Phone: 012-34301815</span><br>
-        <p><span class="grey">In compliance with </span>the Information we provide about <br>
-        layoffs info,email us to <span class="grey">techlayoff@gmail.com</span> </p>
-        <p>For details you can visit the <a href="aboutus.html"><span class="grey">About us</span></a> page</p>
-        <p>Any information, related to layoffnews you can provide us to <a href="info.html"><span class="grey help">Have info,Help us?</span></a></p>
-        </div>
-    </section>
-    <div class="footer">
-        <div class="footer-logo">
-            <p><span class="size">L</span>ayoffs<span class="size">T</span>racker</p>
-        </div>
-        <div class="querry">
-            <p>Missing Layoff info? let us know here<br>
-            Queries,please write to email <span class="grey">techlayoff@gmail.com</span></p>
-        </div>
-    </div>
+        <section>
+            <h2 class="contact">Contact us</h2>
+            <div class="information">
+            <p>[Working Hours: 09:00 hours to 17:30 hours (Saturday and Sunday Holidays)]</p><br>
+            <h2>Queries Related to LayoffsTracker</h2>
+            <span class="grey">e-Mail: techlayoff@gmail.com</span><br>
+            <span class="grey">Phone: 012-34301815</span><br>
+            <p><span class="grey">In compliance with </span>the Information we provide about <br>
+            layoffs info,email us to <span class="grey">techlayoff@gmail.com</span> </p>
+            <p>For details you can visit the <a href="aboutus.html"><span class="grey">About us</span></a> page</p>
+            <p>Any information, related to layoffnews you can provide us to <a href="info.html"><span class="grey help">Have info,Help us?</span></a></p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-item">
+                <h3>Layoffs Tracker</h3>
+                <p>we track every layoffs</p>
+            </div>
+            <div class="footer-item">
+                <h3>Contact Us</h3>
+                <p>Email:techlayoff@gmail.com<br>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-item">
+                <h3>quick links</h3>
+                <ul class="quick-links">
+                    <li><a href="">Insights</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Terms of use</a></li>
+                    <li><a href="">Have info?</a></li>
+                </ul>
+            </div>
+        </footer> 
+    <script src="/js/scriptnav.js"></script>
+</div>
 </body>
 </html>

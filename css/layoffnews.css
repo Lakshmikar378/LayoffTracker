@@ -1,167 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
+    font-family: sans-serif;
+}
+.container{
     height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background: #f0e8e8;
-}
-/*--------navbar-------*/
-.header{
-    background:  #ffffff;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo{
-    margin: 0px 10rem 0px 5rem;
+    width: 100%;
 }
 .logo a{
+    color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    color: #212529 ;
 }
-.size{
-    font-size: 2rem;
-}
-.nav ul{
+nav{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background: #004274;
+    position: relative;
+    height: 70px;
+    padding: 10px 30px;
 }
-.nav ul li{
+.logo{
+    color: #fff;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav ul li{
     list-style-type: none;
 }
-.nav ul li a{
+nav ul li a{
     text-decoration: none;
-    padding: 1.5rem;
-    color: #212529;
-    font-weight: bolder;
-    font-size: 1.2rem;
+    color: #fff;
 }
-.nav ul li a:hover{
-    color:rgba(79, 135, 251,0.9);
+.menu-icon{
+    color: #fff;
+    font-size: 28px;
 }
-/* ----drop down----- */
+.menu-icon{
+    display: none;
+}
 .dropdown {
     position: relative;
     display: inline-block;
-}
-.dropdown-content {
+  }
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 140px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-}
-.dropdown-content a {
+  }
+  .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-/* ----drop down close--- */
-/* -------navbar-----close */
-
-/* -------footer---------*/
-.footer{
-    background: rgba(22, 18, 63,0.9);
-    padding: 1rem;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0 ;
-}
-.footer-logo{
-    margin-right: 30rem;
-}
-.footer-logo p{
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    color: #ffffff;
-    margin: 0px 0px 0px 5rem;
-}
-.size{
-    font-size: 2rem;
-}
-.grey{
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-/* -----footer close-------- */
-
-/* ---------body------ */
-section{
-    /* display: flex;
-    align-items: center; */
-    margin: 0 3rem;
-    background: #E3E6F3;
-    padding: 1rem;
-    margin: 1rem;
-}
-.cards{
-    display: flex;
-}
-h2{
-    color: #838aaa;
-    font-weight: bolder;
-}
-.amazon{
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(6, 6, 18);
-    background: whitesmoke;
-}
-.item {
-    width: 30%;
-    color: #2d303f;
-    font-weight: bolder;
   }
-  
-  .container {
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.footer-item {
+    flex: 0 0 33.33%; 
+    max-width: 33.33%; 
+}
+
+.footer-item h3 {
+    font-size: 1.2em;
+}
+
+.footer-item p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.quick-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.quick-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (max-width: 620px){
+    footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 713px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: #004274;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.march, .febuary, .month {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+.item {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+  }
+ .contain {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 0 0 300px;
+    max-width: 300px;
   }
   
-  .container > div {
-    flex: 34%; 
+  .cards h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
-  .item1{
-    color: rgb(127, 127, 127);
+  
+  .cards p {
+    font-size: 1rem;
+    line-height: 1.6;
   }
-.livspace{
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(6, 6, 18);
-    background: whitesmoke;
-}
-.wipro{
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(6, 6, 18);
-    background: whitesmoke;
-}
-.freshwork{
-    padding: 0.5rem;
-    margin: 1rem;
-    border: 1px solid rgb(6, 6, 18);
-    background: whitesmoke;
-}
+  
+  .grey {
+    color: grey;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cards .container {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cards .container {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  
