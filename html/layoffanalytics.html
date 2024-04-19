@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=0, initial-scale=1.0">
     <title>LayoffsTracker/layoffanalytics</title>
-    <link rel="stylesheet" href="../css/layoffanalytics.css">
+    <link rel="stylesheet" href="/css/layoffanalytics.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </head>
@@ -16,7 +16,16 @@
                 <h1><a href="/index.html">LayoffsTracker</a></h1>
             </div>
             <ul id="menuList">
-                <li><a href="">Insights</a></li>
+                <li><a href=""> <div class="dropdown">
+                    <a href="/index.html">Insights</a>&nbsp;
+                    <span><i class="fa-solid fa-caret-down" style="color: #fff;"></i></span>
+                    <div class="dropdown-content">
+                        <a href="/html/cardview.html">Cardview</a>
+                        <a href="/html/tableview.html">Tableview</a>
+                        <a href="/html/layoffnews.html">Layoffsnews</a>
+                        <a href="/html/layoffanalytics.html">Layoffanalytics</a>
+                    </div>
+            </div></a></li> 
                 <li><a href="/html/aboutus.html">About</a></li>
                 <li><a href="/html/contactus.html">Contact</a></li>
                 <li><a href="/html/tac.html">Terms of use</a></li>
@@ -92,11 +101,11 @@ function toggleMenu() {
     <div class="footer-item">
         <h3>quick links</h3>
         <ul class="quick-links">
-            <li><a href="">Insights</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Terms of use</a></li>
-            <li><a href="">Have info?</a></li>
+            <li><a href="/index.html">Insights</a></li>
+            <li><a href="/html/aboutus.html">About</a></li>
+            <li><a href="/html/contactus.html">Contact</a></li>
+            <li><a href="/html/tac.html">Terms of use</a></li>
+            <li><a href="/html/info.html">Have info?</a></li>
         </ul>
     </div>
 </footer> 
